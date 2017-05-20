@@ -1,0 +1,17 @@
+cmsplugin-filer
+django-cms
+django-cms-articles
+djangocms-column
+djangocms-googlemap
+djangocms-link
+djangocms-snippet
+djangocms-style
+djangocms_text_ckeditor
+djangocms-video
+django-filer
+django-ganalytics
+Django<1.11
+ipython
+python-memcached
+pytz
+raven

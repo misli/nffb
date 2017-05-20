@@ -1,0 +1,1 @@
+test -d /etc/letsencrypt/live/nffb.cz || letsencrypt certonly --webroot -w /django/nffb/htdocs -d nffb.cz -d www.nffb.cz
