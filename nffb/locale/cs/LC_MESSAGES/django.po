@@ -1,0 +1,45 @@
+# NFFB translation.
+# Copyright (C) 2017
+# This file is distributed under the same license as the nffb package.
+# Jakub Dorňák <jakub.dornak@misli.cz>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-24 13:24+0200\n"
+"Last-Translator: Jakub Dorňák <jakub.dornak@misli.cz>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: cms_toolbars.py:22
+msgid "Page Background"
+msgstr "Pozadí stránky"
+
+#: models.py:10
+msgid "background image"
+msgstr "obrázek na pozadí"
+
+#: models.py:11
+msgid "background position"
+msgstr "pozice pozadí"
+
+#: settings.py:185
+msgid "Czech"
+msgstr "Čeština"
+
+#: settings.py:240 settings.py:247 settings.py:252
+msgid "Default"
+msgstr "Výchozí"
+
+#: settings.py:257
+msgid "Content"
+msgstr "Obsah"
+
+#: settings.py:260
+msgid "Sidebar"
+msgstr "Boční panel"

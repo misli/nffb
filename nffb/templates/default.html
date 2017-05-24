@@ -4,12 +4,25 @@
 {% block page_title %}{% page_attribute "page_title" %}{% endblock %}
 {% block meta_description %}{% page_attribute "meta_description" %}{% endblock %}
 
-{% block base_content %}
+{% block page_header %}
 
-<!--Main begin-->
+<header class="intro-header" style="background-image: url('{% block header_background_image %}{{ request.current_page.backgroundextension.image.url }}{% endblock %}'); background-position: {% block header_background_position %}{{ request.current_page.backgroundextension.position }}{% endblock %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{% block title %}{% page_attribute "title" %}{% endblock %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block main_content %}
+
 <div class="container">
     {% block content %}{% placeholder "content" %}{% endblock %}
 </div>
-<!--Main end-->
 
 {% endblock %}
