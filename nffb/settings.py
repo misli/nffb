@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'sekizai',
     'filer',
+    'cmsplugin_container',
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
@@ -78,6 +79,7 @@ INSTALLED_APPS = [
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_utils',
     'cmsplugin_filer_video',
+    'cmsplugin_iframe2',
     'ganalytics',
     #'haystack',
     #'aldryn_search',
@@ -185,10 +187,6 @@ LANGUAGES = [
     ('cs', _('Czech')),
 ]
 
-#LOCALE_PATHS = [
-#    os.path.join(BASE_DIR, 'conf', 'locale'),
-#]
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -295,3 +293,9 @@ THUMBNAIL_ALIASES = {
 #GANALYTICS_TRACKING_CODE = 'UA-88866609-1'
 
 TEST_RUNNER = None
+
+# set to None to allow any value
+CMSPLUGIN_IFRAME_WIDTHS = None
+
+# set to None to allow any value
+CMSPLUGIN_IFRAME_HEIGHTS = None

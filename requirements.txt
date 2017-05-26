@@ -1,4 +1,6 @@
+cmsplugin-container
 cmsplugin-filer
+cmsplugin-iframe2
 django-cms
 django-cms-articles
 djangocms-column
