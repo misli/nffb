@@ -33,7 +33,7 @@
 
 </head>
 
-<body>
+<body style="background-color: {% block background_color %}{{ request.current_page.backgroundextension.color }}{% endblock %};">
 
 {% cms_toolbar %}
 
@@ -46,7 +46,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/"><img alt="" height="50" src="{% static 'img/logo.jpg' %}"></a>
+                <a class="navbar-brand" href="/"><img alt="" height="150" src="{% static 'img/logo.jpg' %}"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,16 +74,6 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
-                        <!--
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        -->
                         <li>
                             <a href="https://www.facebook.com/nadacni.fond.frantiska.buriana" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -92,16 +82,6 @@
                                 </span>
                             </a>
                         </li>
-                        <!--
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        -->
                     </ul>
                     <p class="copyright text-muted">Copyright &copy; Nadační fond Františka Buriana 2017</p>
                 </div>

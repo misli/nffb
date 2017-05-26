@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-24 13:24+0200\n"
+"POT-Creation-Date: 2017-05-25 18:42+0200\n"
 "Last-Translator: Jakub Dorňák <jakub.dornak@misli.cz>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -20,26 +20,34 @@ msgstr ""
 msgid "Page Background"
 msgstr "Pozadí stránky"
 
-#: models.py:10
+#: models.py:19
+msgid "Enter a valid hex color."
+msgstr ""
+
+#: models.py:34
 msgid "background image"
 msgstr "obrázek na pozadí"
 
-#: models.py:11
+#: models.py:35
 msgid "background position"
 msgstr "pozice pozadí"
 
-#: settings.py:185
+#: models.py:36
+msgid "background color"
+msgstr "barva pozadí"
+
+#: settings.py:187
 msgid "Czech"
 msgstr "Čeština"
 
-#: settings.py:240 settings.py:247 settings.py:252
+#: settings.py:238 settings.py:245 settings.py:250
 msgid "Default"
 msgstr "Výchozí"
 
-#: settings.py:257
+#: settings.py:255
 msgid "Content"
 msgstr "Obsah"
 
-#: settings.py:260
+#: settings.py:258
 msgid "Sidebar"
 msgstr "Boční panel"
