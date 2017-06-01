@@ -4,7 +4,8 @@
 {% include 'cms_articles/article_preview.html' %}
 {% endfor %}
 
-<div class="pagination">
+{% if articles.paginator.num_pages > 1 %}
+<div class="pagination" style="clear: both">
     <span class="step-links">
         {% if articles.has_previous %}
             <a href="{% url_page articles.previous_page_number %}">{% trans 'previous' %}</a>
@@ -19,3 +20,4 @@
         {% endif %}
     </span>
 </div>
+{% endif %}

@@ -1,0 +1,23 @@
+{% extends "default.html" %}
+{% load cms_articles thumbnail %}
+
+{% block title %}{% article_attribute "title" %}{% endblock %}
+{% block page_title %}{% article_attribute "page_title" %}{% endblock %}
+{% block meta_description %}{% article_attribute "meta_description" %}{% endblock %}
+{% block breadcrumb %}{% show_article_breadcrumb %}{% endblock %}
+{% block content %}
+    {% article_attribute "image" as image %}
+    {% if image %}
+    <div class="article-image-box col-sm-6 col-md-4" style="float: left; margin-left: 0; margin-right: 30px;">
+        <a href="{% thumbnail image 1500x1500 %}" data-toggle="lightbox" data-title="{{ image.name }}">
+            <img class="article-image" alt="{{ image.name }}" src="{% thumbnail image 600x800 %}" width="100%" />
+        </a>
+    </div>
+    {% endif %}
+
+    <div class="article-perex" style="font-size: 150%; color: #660;">
+        {{ article.get_description | safe }}
+    </div>
+
+    {% article_placeholder "content" %}
+{% endblock %}

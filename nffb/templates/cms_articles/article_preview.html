@@ -1,8 +1,7 @@
 {% load cms_articles thumbnail %}
-<div class="article_preview">
+<div class="article_preview" style="clear: both">
     <h2>
         <a href="{{ article.get_absolute_url }}">{{ article.get_menu_title }}</a>
-        <small> {{ article.order_date }}</small>
     </h2>
     {% with image=article.get_image %}
         {% if image %}
@@ -12,4 +11,5 @@
         {% endif %}
     {% endwith %}
     {{ article.get_description | safe }}
+    <p style="float: right; margin-top: -15px"><a href="{{ article.get_absolute_url }}">celý článek</a></p>
 </div>
