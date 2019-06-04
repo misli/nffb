@@ -5,8 +5,5 @@
 *~
 /build
 /data
-/dist
-/env
+/docker-compose.override.yml
 /htdocs
-/.coverage
-/.tox
