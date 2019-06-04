@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+
+  nffb:
+    image: misli/nffb
+    build: .
+    depends_on:
+      - memcached
+    environment:
+      SECRET_KEY: secretkey
+      MEMCACHED_LOCATION: memcached:11211
+    ports:
+      - 127.0.0.1:9093:80
+    volumes:
+      - ./.ipython:/root/.ipython
+      - ./data:/app/data
+      - ./data/media:/app/htdocs/media
+
+  memcached:
+    image: memcached
