@@ -14,7 +14,7 @@ services:
     volumes:
       - ./.ipython:/root/.ipython
       - ./data:/app/data
-      - ./data/media:/app/htdocs/media
+      - ./media:/app/htdocs/media
 
   memcached:
     image: memcached
